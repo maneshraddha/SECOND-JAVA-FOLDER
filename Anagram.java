@@ -9,6 +9,6 @@ public class Anagram
 		{ 		
 			Utility u=new Utility();
 
-				u.Show(); // call function
+				u.isAnagram(); // call function
 		}
 }

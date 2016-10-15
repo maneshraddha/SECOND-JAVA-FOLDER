@@ -26,7 +26,7 @@ import com.bridgelabz.util.Utility;
                     int mid=(start+end)/2;
                     if(arr[mid]==k)
                     return arr[mid];
-                    else if(k>arr[mid])
+                    else if(k>mid)
                     start = mid+1;
                     else
                     end = mid-1;

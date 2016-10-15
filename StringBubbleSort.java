@@ -20,11 +20,7 @@ class Cal
 		void Sort( int []arr)
 			{
 				char []arr1 = new char[n];
-				
-				/*for(int i=0;i<n;i++)
-				{
-		`			arr1[i]=arr[i];
-				}	*/
+
        for(int i=0;i<n;i++)
 					{
 						System.out.println(arr1[i]);
