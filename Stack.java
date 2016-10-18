@@ -4,11 +4,11 @@ import com.bridgelabz.util.Utility;
 import com.bridgelabz.codes.Node2;
 public class Stack
 {
-    Node top, tmp;
+    Node2 top, tmp;
     int count=0;
     public void push(String c)
     {
-        tmp = new Node();
+        tmp = new Node2();
         tmp.data = c;
         if(top == null)    
         {
@@ -23,19 +23,19 @@ public class Stack
         count++;
     }
 
-    public void pop()
+    public void pop()       //to pop brackets
     {
-        Node top1 = top;
+        Node2 top1 = top;       //store top in another top
         //top1 = new Node();
         //top1 = top;
         if(top1 == null)
         {
-            System.out.println("Stack is empty");
+            System.out.println("Stack is empty");       //if nothing is there ..stack is empty
         }
         else
         {
-            top1 = top1.next;
-            top = top1;
+            top1 = top1.next;               //else put top1 ka data in top1.next
+            top = top1;                     //and keep top in top
         }
         count--;
         
