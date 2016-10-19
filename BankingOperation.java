@@ -13,18 +13,18 @@ class BankingOperation
         QuequNode node = new QuequNode();
         if(front == null)
         {
-            front = node;
+            front = node;           //if front is null put node data in front and rear
             rear = node;
         }
        else
         {
-            rear.setNext(node);
+            rear.setNext(node);     //otherwise set node as next of rear and  make it reare
             rear = node;
         }
     }
     public void remove()
     {
-        front = rear;
+        front = rear;               //keep rear in front
         if(front == null)
             System.out.println("Empty queue");
     }
@@ -34,30 +34,30 @@ class BankingOperation
         double cash = u.InputDouble();
         if(cash<=balance)   
         {
-            balance = balance - cash;
+            balance = balance - cash;           //widraw cash
             System.out.println("widrawal successful");
         }
         else 
-            System.out.println("Not enough balance");
+            System.out.println("Not enough balance"); // if not enough bal then NOP
         number++;
-        this.remove();
+        this.remove();      //at the end of process remove from queue
     }
     public void deposit(int choice)
     {
         System.out.println("Enter the amount you want to deposit");
         double cash = u.InputDouble();
-        balance = balance + cash;
+        balance = balance + cash;           //deposit amount in account
         System.out.println("Deposited successfully");
         number++;
-        this.remove();
+        this.remove();          //at the end of process remove from queue
     }
     public void getBalance(int choice)
     {
-        System.out.println("Balance is" + balance);
+        System.out.println("Balance is" + balance);         // get balance amount
     }
     public void operations(int choice)
     {
-        System.out.println("Number of operationa are: " + number);
+        System.out.println("Number of operationa are: " + number);          //show number of operations
     }
 
 }

@@ -14,12 +14,13 @@ class CouponNumber2
         System.out.println("enter the numbers");
         for(int i=0;i<=k;i++)
         { 
-            if(i>n-1)
-                break;
-            int a= u.InputInt();
-            arr[i] = a;                 //take ay random number
+                //take ay random number
             for(int z=0;z<n;z++)
             {  
+                if(i>n-1)
+                    break;
+                int a= u.InputInt();
+                arr[i] = a; 
                 for(int j=0;j<n;j++)
                 {
                     if(arr[j+1]==arr[j])
@@ -27,6 +28,11 @@ class CouponNumber2
                         arr[j+1]=0;
                         System.out.println("number can not be added enter another");
                         arr[j+1]= u.InputInt();
+                        if(arr[j+1]>k)
+                        {
+                            System.out.println("number can not be added enter another");
+                            arr[j+1]= u.InputInt();
+                        }                     
                     }
                 }
             }
