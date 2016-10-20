@@ -360,5 +360,48 @@ public class Utility
         }
         return "";
     }
+    public void writeFile(File file, int data)      //writing int data
+    {
+        try
+        {
+            String str = this.readFile(file);
+            str = str.trim();
+            BufferedWriter wr = new BufferedWriter(new FileWriter(file));
+            wr.write(str + data +" ");
+            wr.close();
+        }
 
+        catch(Exception e)
+        {
+            System.out.println(e);
+        }
+
+    }       //end of write file
+    public void writeFile(File file,String data)    //writing string data
+    {
+		try{
+			String string = this.readFile(file);
+			string = string.trim();
+			BufferedWriter wr = new BufferedWriter(new FileWriter(file));
+			wr.write(string+" "+data);
+			wr.close();
+		}
+		catch(Exception e){
+			System.out.println(e);
+		}
+	}
+    public void clearFile(File file)
+    {
+        try
+        {
+            String str = this.readFile(file);
+            BufferedWriter wr = new BufferedWriter (new FileWriter(file));
+            wr.write(" ");
+            wr.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println(e);
+        }
+    }
 }

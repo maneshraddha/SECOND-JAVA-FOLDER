@@ -6,7 +6,7 @@ class Harmonic
     {
         BufferedReader br = new BufferedReader(new InputStreamReader (System.in));
         System.out.println("Enter the number");
-        int n=Integer.parseInt(br.readLine());
+        int n=Integer.parseInt(br.readLine());      //take number user want
         float sum=0;
         for(int i=1;i<=n;i++)
         {

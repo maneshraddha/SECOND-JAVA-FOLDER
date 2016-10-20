@@ -9,21 +9,21 @@ class Triplets
         int sum=0, count=0;
         Utility u=new Utility();
         System.out.println("enter number of integers");
-        int n=u.InputInt();
-        int [] arr=new int[n];
+        int n=u.InputInt();     //scan the number of elemetnts
+        int [] arr=new int[n];  //initialize array
         for(int i=0;i<n;i++)
         {
-            arr[i]=u.InputInt();
+            arr[i]=u.InputInt();        //scan array
         }
         for(int i=0;i<n;i++)
         {
             if ((i+2)>=n)
                 break;
-            sum=arr[i]+arr[i+1]+arr[i+2];
+            sum=arr[i]+arr[i+1]+arr[i+2];           //add consecutive elements in array
 
             if(sum==0)
             {
-                count++;
+                count++;            //when sum is 0 increase count
             }
         }
         System.out.println("Number of triplets are: " + count);

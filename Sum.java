@@ -9,11 +9,11 @@ class Sum
         int sum=0, count=0;
         Utility u=new Utility();
         System.out.println("enter number of integers");
-        int n=u.InputInt();
-        int [] arr=new int[n];
+        int n=u.InputInt();     //scan the numbers in array
+        int [] arr=new int[n];      //initialize array
         for(int i=0;i<n;i++)
         {
-            arr[i]=u.InputInt();
+            arr[i]=u.InputInt();        //scan array elements
         }
         for(int i=0;i<n;i++)
         {
@@ -23,7 +23,7 @@ class Sum
 
             if(sum==0)
             {
-                count++;
+                count++;        //when sum of 3 digits becomes 0 increase the count
             }
         }
         System.out.println("Number of triplets are: " + count);
