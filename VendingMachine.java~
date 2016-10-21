@@ -18,7 +18,7 @@ class VendingMachine
                 break;
             arr1[i]=rupees / arr[i];       // store number of given notes in array
             rupees = rupees % arr[i];       //take the remainder 
-            //count++;
+            count++;
         }
 
         for(int i=0; i<arr.length;i++)
