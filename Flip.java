@@ -19,7 +19,7 @@ class Flip
                 System.out.println("Percentage of tail is:"+ d);
 
             }
-            if (i%2!=0)
+            if (m%2!=0)
             {
     
                 System.out.println("If head is in initial position ");
@@ -40,6 +40,6 @@ class Flip
         }
             else 
 
-                System.out.println("Invalid number);
+                System.out.println("Invalid number");
     }
 }

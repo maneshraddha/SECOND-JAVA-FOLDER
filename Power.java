@@ -11,7 +11,8 @@ class Power
         int sum=1;
         if(n>0 && n<=31)
         {
-            for(int i=0; i<n;i++)
+            arr[0] = 1;
+            for(int i=1; i<n;i++)
             {
                 sum= 2*sum;     //store powers of 2 in array
                 arr[i]=sum;
